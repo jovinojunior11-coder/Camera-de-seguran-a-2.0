@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Modo Câmera</title>
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h3>Câmera de Segurança</h3>
+
+<video id="video" autoplay playsinline></video><br><br>
+
+<button onclick="switchCamera()">🔄 Alternar Câmera</button>
+<button onclick="startContinuous()">▶️ Gravação Contínua</button>
+<button onclick="stopContinuous()">⏹️ Parar</button>
+
+<canvas id="canvas" hidden></canvas>
+
+<script src="app.js"></script>
+<script src="recorder.js"></script>
+<script src="motion.js"></script>
+
+</body>
+</html>
